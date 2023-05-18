@@ -1,6 +1,12 @@
+from datetime import datetime
+
 import speech_recognition as sr
 import pyttsx3
 import pyaudio
+import pywhatkit
+import wikipedia
+import pyjokes
+
 
 listener = sr.Recognizer()
 engine = pyttsx3.init()
@@ -34,12 +40,25 @@ def run_alexa():
         command = take_command()
         print(command)
         if 'play' in command:
-            talk('playing')
+            song = command.replace('play'+'')
+            talk('playing' + song)
             print('playing')
-        elif 'stop' in command or 'exit' in command:
-            talk('Exiting the program')
-            print('Exiting the program')
-            break
+            pywhatkit.playonyt(song)
+        elif 'time' in command:
+            time = datetime.datetime.now().strftime('%I:%M %P')
+            talk('current time is'+time)
+        elif 'wikipedia' in command:
+            thing = command.replace('what is'+'')
+            info = wikipedia.summary(thing, 10)
+            print(info)
+            talk(info)
+        elif 'date' in command:
+            print('I am an AI')
 
+        elif 'alexa are you single' in command:
+            print('I am in a relationship with wifi')
+        elif 'joke' in command:
+            talk('pyjokes.get_joke()')
 
-run_alexa()
+while True:
+    run_alexa()
