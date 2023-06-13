@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.11 (ml-inent)" project-jdk-type="Python SDK" />
   <component name="PyPackaging">
     <option name="earlyReleasesAsUpgrades" value="true" />
   </component>
+=======
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.11 (alexa attempt)" project-jdk-type="Python SDK" />
+>>>>>>> a315864e575617c12b0297c5a0f9f41d1ab5986e
 </project>

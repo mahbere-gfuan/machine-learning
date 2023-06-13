@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/ml-inent.iml" filepath="$PROJECT_DIR$/.idea/ml-inent.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/alexa attempt.iml" filepath="$PROJECT_DIR$/.idea/alexa attempt.iml" />
+>>>>>>> a315864e575617c12b0297c5a0f9f41d1ab5986e
     </modules>
   </component>
 </project>
